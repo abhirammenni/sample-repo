@@ -1,8 +1,20 @@
 <html>
 <head>
     <title>Hello</title>
+    <head>
+        <!-- Office JavaScript API -->
+        <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
+        <script type="text/javascript">
+            Office.onReady((info) => {
+                    if (info.host === Office.HostType.Word) { //anything you need to set up. 
+                } 
+            }); 
+        </script>
+    </head>
 </head>
+
 <body>
     <h1>Home</h1>
     <p>Simple HTML to test Office Add-in</p>
+
 </html>
